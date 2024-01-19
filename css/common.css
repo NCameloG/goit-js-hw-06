@@ -22,3 +22,17 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+/* Task 3 */
+.gallery{
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.gallery img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
