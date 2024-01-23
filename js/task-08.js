@@ -4,9 +4,9 @@ form.addEventListener('submit', e => {
   e.preventDefault();
   console.log(e.currentTarget.elements);
   const {
-    elements: { password, email },
+    elements: { email, password },
   } = e.currentTarget;
-  if (password.value.split('').length > 1 || email.value.split('').length > 1) {
+  if (!email.value || !password.value) {
     return alert('Please fill in all the fields!');
   }
 
